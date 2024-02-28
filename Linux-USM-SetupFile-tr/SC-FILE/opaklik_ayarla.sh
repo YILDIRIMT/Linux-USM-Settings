@@ -1,27 +1,24 @@
 #!/bin/bash
 
-
 # Masaüstü sorgulama
 DESKTOP="$HOME/Masaüstü"
 
 if [ ! -d "$DESKTOP" ]; then
 
-DESKTOP="$HOME/Desktop"
+    DESKTOP="$HOME/Desktop"
 
-if [ ! -d "$DESKTOP" ]; then 
+    if [ ! -d "$DESKTOP" ]; then
 
-echo -e "\033[31m HATA: Masaüstü dizini bulunamadı ~/USM-S/opaklik_ayarla.sh dosyasının içindeki DESKTOP(5) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
+        echo -e "\033[31m HATA: Masaüstü dizini bulunamadı ~/USM-S/opaklik_ayarla.sh dosyasının içindeki DESKTOP(5) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
 
-exit
+        exit
+
+    fi
 
 fi
-
-fi
-
 
 # Opaklık değeri
 yuzde=$(zenity --entry --title="Giriş Örneği" --text="Lütfen 100 - 0 arası bir değer girin :")
-
 
 # İşleme
 if [ -n "$yuzde" ] && [ "$yuzde" -le 100 ] && [ "$yuzde" -ge 0 ]; then
@@ -29,9 +26,8 @@ if [ -n "$yuzde" ] && [ "$yuzde" -le 100 ] && [ "$yuzde" -ge 0 ]; then
     zenity --info --title="Başarılı" --text="İşlem Başarılı"
     bash "$DESKTOP"/Ayarlar.sh
 
-
-# Başarısız işlem    
+# Başarısız işlem
 else
     zenity --warning --title="Başarısız" --text="Kutucuğu boş bırakmayın veya geçersiz bir değer girmeyin"
-    bash "$DESKTOP"/Ayarlar.sh 
+    bash "$DESKTOP"/Ayarlar.sh
 fi
