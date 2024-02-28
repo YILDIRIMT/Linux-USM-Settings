@@ -15,7 +15,7 @@ git clone https://github.com/YILDIRIMT/Linux-USM-Settings/Linux-USM-SetupFile-tr
 cd Linux-USM-Settings
 ```
 ```bash
-cd Linux-USM-SetupFile-trP
+cd Linux-USM-SetupFile-tr
 ```
 ```bash
 sudo chmod +x make.sh
