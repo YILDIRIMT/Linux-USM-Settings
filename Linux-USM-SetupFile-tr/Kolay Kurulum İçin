@@ -1,0 +1,10 @@
+Terminali bu dizinde açın ve ;
+
+
+1 - chmod +x make.sh
+
+2 - bash make.sh
+
+Komutlarını girin.
+
+N : Opaklık ayarı sadece XFCE4 sistemine uygulanmıştır farklı masaüstü ortamlarında çalışmayabilir.
