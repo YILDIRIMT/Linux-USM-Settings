@@ -15,6 +15,11 @@ if [ ! -d "$DESKTOP" ]; then
 
 DESKTOP="$HOME/Desktop"
 
+if [ ! -d "$DESKTOP" ]; then
+DESKTOP="$(xdg-user-dir DESKTOP)"
+
+fi
+
 if [ ! -d "$DESKTOP" ]; then 
 
 echo -e "\033[31m HATA: Masaüstü dizini bulunamadı Make dosyasının içindeki DESKTOP(7) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
