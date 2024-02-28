@@ -9,7 +9,7 @@ Installation <img src="https://img.shields.io/badge/Version-BETA-black.svg?" alt
 --------------------------------------------------------------------------
 
 ```bash
-git clone https://github.com/YILDIRIMT/Linux-USM-Settings/Linux-USM-SetupFile-trP
+git clone https://github.com/YILDIRIMT/Linux-USM-Settings
 ```
 ```bash
 cd Linux-USM-Settings
