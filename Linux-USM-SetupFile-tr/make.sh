@@ -59,6 +59,9 @@ elif command -v pacman &>/dev/null; then
   sudo pacman -S zenity xterm vim
 else
   echo -e "\033 HATA: Paket yükleyicisi bulunamadığı için otamatik zenity, vim ve xterm paketi kurulamadı zenity ve xterm paketini kurmanız gerekir. \033[0m"
+  exit
 fi
+
+zenity --info --title="Linux-USM-Settings Setup" --text="Kurulum Başarılı"
 
 vim Finish
