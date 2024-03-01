@@ -1,6 +1,31 @@
 #!/bin/bash
 
+
+# Erişim sorgulama
+QUERY=""
+
+wget -q --spider https://github.com
+
+if [ ! $? -eq 0 ]; then
+
+echo -e "\033[31mHATA: Ağ bağlantısı başarısız olduğu için gerekli paketler yüklenemez. Genede kurulumu sürdürmek için [Y/N]\033[0m" 
+
+read -p "" QUERY
+
+  if [[ $QUERY == "Y" || $QUERY == "y" ]]; then
+
+	 echo ""
+  
+  else 
+  
+	 exit
+
+  fi
+
+fi
+
 chmod +x SC-FILE/USM-ayarlar-programcigi.sh
+
 
 # Masaüstü sorgulama
 DESKTOP="$HOME/Masaüstü"
