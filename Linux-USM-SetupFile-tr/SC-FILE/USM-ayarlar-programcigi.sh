@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Araç sorgulama
-if ! command -v zenity || command -v xterm || command -v vim; then
+if ! command -v zenity || ! command -v xterm || ! command -v vim; then
   echo -e "Gerekli araçlar kuruluyor"
 
   if command -v apt &>/dev/null; then
