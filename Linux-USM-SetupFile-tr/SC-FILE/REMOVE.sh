@@ -72,15 +72,15 @@ case "$selection" in
  if [ ! -d "$HOME/USM-S" ]; then
 
 	zenity --info --text="Kaynak dosyaları başarılı bir şekilde kaldırıldı. Bağımlılıkların kaldırılması için açılan terminal penceresine parola girişi yapın. Sonrasında 2 işlemide onaylayın"
-	
+	sudo $PACK xterm
+        sudo $PACK zenity
  else
 	 
         zenity --info --text="Bir sebepten ötürü kaynak dosyalar silinemedi. El ile ~/USM-S konumundan kaynak dosyaları kaldırabilirsiniz."
 
  fi
  
- sudo $PACK xterm
- sudo $PACK zenity
+
 
  ;;
  "Kaldır (Sadece Kaynak Dosyaları)")
