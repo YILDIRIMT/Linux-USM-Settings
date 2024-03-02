@@ -64,6 +64,7 @@ cp SC-FILE/parola_degistir.sh ~/USM-S
 cp SC-FILE/sistem_guncelleme.sh ~/USM-S
 cp SC-FILE/USM-ayarlar-programcigi.sh "$DESKTOP"
 cp SC-FILE/Finish "$DESKTOP"
+cp SC-FILE/REMOVE.sh "$DESKTOP"
 
 
 # Yetkilendirme işlemleri
@@ -72,9 +73,11 @@ chmod +x ~/USM-S/kullanici_olustur.sh
 chmod +x ~/USM-S/opaklik_ayarla.sh
 chmod +x ~/USM-S/parola_degistir.sh
 chmod +x ~/USM-S/sistem_guncelleme.sh
+chmod +x "$DESKTOP"/REMOVE.sh
 
 cd "$DESKTOP" || exit
 mv USM-ayarlar-programcigi.sh Ayarlar.sh
+mv REMOVE.sh Kaldır.sh
 
 
 # Erişim sorgulama (2)
