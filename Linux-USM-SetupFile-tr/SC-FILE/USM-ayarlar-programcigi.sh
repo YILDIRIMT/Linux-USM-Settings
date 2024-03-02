@@ -1,7 +1,26 @@
 #!/bin/bash
 
+
+#Desktop sorgulama
+DESKTOP="$HOME/Masaüstü"
+
+if [ ! -d "$DESKTOP" ]; then
+
+    DESKTOP="$HOME/Desktop"
+
+    if [ ! -d "$DESKTOP" ]; then
+
+        echo -e "\033[31m HATA: Masaüstü dizini bulunamadı USMKaldır.sh dosyasının içindeki DESKTOP(5) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
+
+        exit
+
+    fi
+
+fi
+
+
 # Araç sorgulama
-if ! command -v zenity || ! command -v xterm || ! command -v vim; then
+if ! command -v zenity || command -v xterm || command -v vim; then
   echo -e "Gerekli araçlar kuruluyor"
 
   if command -v apt &>/dev/null; then
@@ -18,7 +37,7 @@ if ! command -v zenity || ! command -v xterm || ! command -v vim; then
 
 fi
 
-selection=$(zenity --list --title="Ayar Programcığı Seçimi" --text="Aşağıdan bir ayar programcığı seçin:" --column="USM-Ayarlar-Programcığı" "Kullanıcı Oluştur" "Kullanıcı Sil" "Parola Değiştir" "Sistemi Güncelle" "Pencere Opaklığını Ayarla" "XFCE4 Panel Ayarları" "Diğer Ayarlar (XFCE4 Settings)")
+selection=$(zenity --list --title="Ayar Programcığı Seçimi" --text="Aşağıdan bir ayar programcığı seçin:" --column="USM-Ayarlar-Programcığı" "Kullanıcı Oluştur" "Kullanıcı Sil" "Parola Değiştir" "Sistemi Güncelle" "Pencere Opaklığını Ayarla" "XFCE4 Panel Ayarları" "Diğer Ayarlar (XFCE4 Settings)" "Programı Kaldır")
 
 case "$selection" in
 "Kullanıcı Oluştur")
@@ -41,6 +60,9 @@ case "$selection" in
   ;;
 "Diğer Ayarlar (XFCE4 Settings)")
   xfce4-settings-manager
+  ;;
+"Programı Kaldır")
+  "$DESKTOP"/Kaldır.sh
   ;;
 *) ;;
 
