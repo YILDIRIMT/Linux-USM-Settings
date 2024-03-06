@@ -77,7 +77,7 @@ chmod +x "$DESKTOP"/REMOVE.sh
 
 cd "$DESKTOP" || exit
 mv USM-ayarlar-programcigi.sh Ayarlar.sh
-mv REMOVE.sh Kaldır.sh
+mv REMOVE.sh USMKaldır.sh
 
 
 # Erişim sorgulama (2)
