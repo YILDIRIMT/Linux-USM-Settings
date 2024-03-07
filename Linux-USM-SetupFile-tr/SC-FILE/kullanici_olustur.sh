@@ -9,7 +9,7 @@ if [ ! -d "$DESKTOP" ]; then
 
     if [ ! -d "$DESKTOP" ]; then
 
-        echo -e "\033[31m HATA: Masaüstü dizini bulunamadı ~/USM-S/kullanici_olustur.sh dosyasının içindeki DESKTOP(4) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
+        echo -e "\033[31mHATA: Masaüstü dizini bulunamadı ~/USM-S/kullanici_olustur.sh dosyasının içindeki DESKTOP(4) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
 
         exit
 
