@@ -9,7 +9,7 @@ if [ ! -d "$DESKTOP" ]; then
 
   if [ ! -d "$DESKTOP" ]; then
 
-    echo -e "\033[31m HATA: Masaüstü dizini bulunamadı ~/USM-S/opaklik_ayarla.sh dosyasının içindeki DESKTOP(5) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
+    echo -e "\033[31m HATA: Masaüstü dizini bulunamadı ~/USM-S/parola_degistir.sh dosyasının içindeki DESKTOP(4) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
 
     exit
 
