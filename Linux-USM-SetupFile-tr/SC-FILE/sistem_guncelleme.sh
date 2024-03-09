@@ -9,7 +9,7 @@ if [ ! -d "$DESKTOP" ]; then
 
   if [ ! -d "$DESKTOP" ]; then
 
-    echo -e "\033[31mHATA: Masaüstü dizini bulunamadı ~/USM-S/sistem_guncelleme.sh dosyasının içindeki DESKTOP(4) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
+    zenity --info --title="Desktop Error" --text="HATA: Masaüstü dizini bulunamadı ~/USM-S/sistem_guncelleme.sh dosyasının içindeki DESKTOP(4) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin."
 
     exit
 
@@ -19,8 +19,8 @@ fi
 
 zenity --question --title="Sistem Güncelleme" --text="Sistemi güncellemek istediğinizden emin misiniz?"
 
-# Bilgilendirme
-if [[ $? -eq 0 ]]; then # "$?" yerine başka bir şey kullanılması gerekiyor Bknz: https://www.shellcheck.net/wiki/SC2181
+
+if [[ $? -eq 0 ]]; then # 
 
   zenity --info --title="Sistem Güncelleme" --text="Terminale şifrenizi girdikten sonra güncelleme işlemi başlayacak."
 
