@@ -10,7 +10,7 @@ if [ ! -d "$DESKTOP" ]; then
 
     if [ ! -d "$DESKTOP" ]; then
 
-        echo -e "\033[31mHATA: Masaüstü dizini bulunamadı Ayarlar.sh dosyasının içindeki DESKTOP(5) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
+        zenity --info --title="Desktop Error" --text="HATA: Masaüstü dizini bulunamadı Ayarlar.sh dosyasının içindeki DESKTOP(5) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin."
 
         exit
 
