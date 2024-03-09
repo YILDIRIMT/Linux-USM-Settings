@@ -1,0 +1,7 @@
+Open the terminal in this directory and enter the following commands;
+
+1 - chmod +x make.sh
+
+2 - bash make.sh
+
+Note: Opacity adjustment is specifically applied to the XFCE4 system and may not work in different desktop environments.

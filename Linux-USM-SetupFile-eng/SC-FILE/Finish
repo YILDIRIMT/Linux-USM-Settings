@@ -1,0 +1,11 @@
+The installation is complete. You can start the program by clicking on the script named "Settings.sh" on the desktop.
+
+If clicking the script doesn't open it, you can open a terminal on the desktop and enter the following command:
+
+1 - bash Settings.sh
+
+Source files location: ~/USM-S
+
+Note: Opacity adjustment is specifically applied to the XFCE4 system and may not work in different desktop environments.
+
+Note: After reading this, you can delete this file and the installation folder you downloaded.
