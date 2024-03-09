@@ -62,7 +62,7 @@ case "$selection" in
 "All File Delete")
  rm ~/USM-S/change_pass.sh
  rm ~/USM-S/system_update.sh
- rm ~/USM-S/opaklik_ayarla.sh
+ rm ~/USM-S/adjust_opacity.sh
  rm ~/USM-S/create_user.sh
  rm ~/USM-S/delete_user.sh
  rmdir ~/USM-S
