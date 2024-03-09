@@ -9,8 +9,8 @@ if [ ! -d "$DESKTOP" ]; then
 
     if [ ! -d "$DESKTOP" ]; then
 
-        echo -e "\033[31mHATA: Masaüstü dizini bulunamadı ~/USM-S/kullanici_sil.sh dosyasının içindeki DESKTOP(4) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin. \033[0m"
-
+        zenity --info --title="Desktop Error" --text="HATA: Masaüstü dizini bulunamadı ~/USM-S/kullanici_sil.sh dosyasının içindeki DESKTOP(4) değer kısmını masaüstü konumunuzu işaretleyecek şekilde değiştirin."
+        
         exit
 
     fi
