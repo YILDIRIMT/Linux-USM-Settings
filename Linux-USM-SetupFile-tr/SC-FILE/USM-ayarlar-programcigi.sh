@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-#Desktop sorgulama
+# Desktop sorgulama
 DESKTOP="$HOME/Masaüstü"
 
 if [ ! -d "$DESKTOP" ]; then
